@@ -1,13 +1,22 @@
+import React, {Component} from 'react';
+
+import Nav from '../nav/nav';
+import Form from '../form/form';
+import Gallery from '../gallery/gallery';
+import Footer from '../footer/footer';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        checking
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+        <div>
+          <Nav />
+          <Form />
+          <Gallery />
+          <Footer />
+        </div>
+  )}
 }
 
 export default App;
