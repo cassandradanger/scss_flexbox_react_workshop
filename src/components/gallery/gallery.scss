@@ -25,19 +25,18 @@
         visibility: hidden;
         height: 250px;
         width: 200px;
-        background-color: rgba(0, 0, 0, 0.5);
         border-radius: 6px;
-        color: #fff;
         text-align: center;
         margin: 10px;
         border-radius: 6px;
         position: absolute;
         z-index: 1;
+        transition: 0.3s;
           p {
+            visibility: hidden;
             font-size: 16px;
             font-weight: bold;
             margin: 48% 0 0 0;
-            background: $primary-color;
             width: 100%;
             padding: 20px 0;
           }
@@ -52,6 +51,12 @@
     }
     .recipe-item:hover .recipeName {
       visibility: visible;
+      background-color: rgba(0, 0, 0, 0.5);
+      p {
+        visibility: visible;
+        background-color: $primary-color;
+        color: #fff;
+      }
     }
   }
 }
