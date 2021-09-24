@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './gallery.css';
+import './gallery.scss';
 
 class Gallery extends Component {
   state = {
@@ -45,12 +45,17 @@ class Gallery extends Component {
   render() {
     return (
         <div className="gallery">
-          this is the gallery
+          <span className="header-wrapper">
+            <h3>this is the gallery</h3>
+            <h5>it's all about food</h5>
+          </span>
           <ul>
             {this.state.recipes.map((recipeObject)=> {
-              return <li key={recipeObject.name}>
-                <span className="recipeName">{recipeObject.name}</span>
-                <a href={recipeObject.recipeUrl}>
+              return <li className="recipe-item" key={recipeObject.name}>
+                <span className="recipeName">
+                  <p>{recipeObject.name}</p>
+                </span>
+                <a href={recipeObject.recipeUrl} target="_blank" rel="noreferrer">
                   <img src={recipeObject.imageUrl} alt={recipeObject.name}/>
                 </a>
               </li>
