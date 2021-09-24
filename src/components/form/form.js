@@ -25,7 +25,6 @@ class Form extends Component {
   }
 
   onSubmit = () => {
-    console.log('this stuff',this.state.inputObject);
     this.setState({
       displayObject: this.state.inputObject
     });
