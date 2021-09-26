@@ -15,13 +15,12 @@
     }
   }
   ul {
-    width: 87%;
     display: flex;
     align-self: center;
     list-style: none;
     flex-wrap: wrap;
     padding: 0;
-    justify-content: center;
+    justify-content: flex-start;
     .recipe-item {
       position: relative;
       display: inline-block;
@@ -60,6 +59,13 @@
         background-color: $primary-color;
         color: #fff;
       }
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .gallery {
+    ul {
+      justify-content: center;
     }
   }
 }

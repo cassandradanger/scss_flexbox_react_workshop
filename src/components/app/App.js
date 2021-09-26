@@ -15,6 +15,7 @@ class App extends Component {
           <Form />
           <hr/>
           <Gallery />
+          <br/>
           <Footer />
         </div>
   )}

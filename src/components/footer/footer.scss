@@ -1,0 +1,32 @@
+@import '../../assets/styles/variables.scss';
+
+.footer {
+  background-color: $secondary-color;
+  color: white;
+  width: 97%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .footer{
+    .footer-text{
+      width: 50%;
+    }
+    .footer-img{
+      width: 30%;
+      align-self: center;
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
+  }
+}
