@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Nav from '../nav/nav';
+import Header from '../header/header';
 import Form from '../form/form';
 import Gallery from '../gallery/gallery';
 import Footer from '../footer/footer';
@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
         <div className="App">
-          <Nav />
+          <Header />
           <Form />
           <Gallery />
           <Footer />
