@@ -5,7 +5,7 @@ import Form from '../form/form';
 import Gallery from '../gallery/gallery';
 import Footer from '../footer/footer';
 
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {
@@ -13,6 +13,7 @@ class App extends Component {
         <div className="App">
           <Header />
           <Form />
+          <hr/>
           <Gallery />
           <Footer />
         </div>

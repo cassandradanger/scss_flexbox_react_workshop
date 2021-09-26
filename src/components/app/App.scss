@@ -1,4 +1,8 @@
 .App {
   display: flex;
   flex-direction: column;
+  hr{
+    width: 90%;
+    margin-bottom: 30px;
+  }
 }
