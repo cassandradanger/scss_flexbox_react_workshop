@@ -52,12 +52,12 @@ class Gallery extends Component {
           <ul>
             {this.state.recipes.map((recipeObject)=> {
               return <li className="recipe-item" key={recipeObject.name}>
-                <span className="recipeName">
-                  <p>{recipeObject.name}</p>
-                </span>
                 <a href={recipeObject.recipeUrl} target="_blank" rel="noreferrer">
-                  <img src={recipeObject.imageUrl} alt={recipeObject.name}/>
+                  <span className="recipeName">
+                    <p>{recipeObject.name}</p>
+                  </span>
                 </a>
+                <img src={recipeObject.imageUrl} alt={recipeObject.name}/>
               </li>
             })}
           </ul>

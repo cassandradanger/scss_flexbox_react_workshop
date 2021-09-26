@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './form.css';
+import './form.scss';
 
 class Form extends Component {
   state = {
@@ -15,7 +15,6 @@ class Form extends Component {
     }
   }
   onChange = (e, type) => {
-    console.log(e.target.value, type);
     this.setState({
       inputObject: {
         ...this.state.inputObject,
@@ -33,22 +32,26 @@ class Form extends Component {
   render() {
     return (
         <div className="form">
-          <>
-            <label htmlFor="name">name:</label>
+          <div className="form-input">
+            <label className="form-label" htmlFor="name">name:</label>
             <input type="text" id="name" onChange={(e) => {this.onChange(e, "name")}}/>
-            <label htmlFor="imageUrl">image url:</label>
+            <label className="form-label" htmlFor="imageUrl">image url:</label>
             <input type="text" id="imageUrl" onChange={(e) => {this.onChange(e, "imageUrl")}}/>
-            <label htmlFor="recipeUrl">recipe url:</label>
+            <label className="form-label" htmlFor="recipeUrl">recipe url:</label>
             <input type="text" id="recipeUrl" onChange={(e) => {this.onChange(e, "recipeUrl")}}/>
-            <button onClick={this.onSubmit}>submittt</button>
-          </>
-          { JSON.stringify(this.state.displayObject) }
-          {/* <div className="display-new-image">
-            <p>{this.state.displayObject.name}</p>
-            <a href={this.state.displayObject.recipeUrl}>
-              <img alt='most recent entry' src={this.state.displayObject.imageUrl}/>
-            </a>
-          </div> */}
+            <button className="submit-btn" onClick={this.onSubmit}>SUBMIT</button>
+          </div>
+          {/* { JSON.stringify(this.state.displayObject) } */}
+            <div className="display-new-image">
+              {this.state.displayObject.name &&
+              <>
+                <p>{this.state.displayObject.name}</p>
+                <a href={this.state.displayObject.recipeUrl}>
+                  <img alt='most recent entry' src={this.state.displayObject.imageUrl}/>
+                </a>
+              </>
+              }
+            </div>
         </div>
   )}
 }

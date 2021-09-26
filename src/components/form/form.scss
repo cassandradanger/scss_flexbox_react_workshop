@@ -1,0 +1,50 @@
+@import '../../assets/styles/variables.scss';
+
+.form {
+  display: flex;
+  flex-direction: row;
+  .form-input {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 40%;
+  margin-top: 20px;
+  margin-left: 103px;
+    .form-label {
+      font-size: 12px;
+      margin-top: 20px;
+    }
+    input{
+      height: 30px;
+      padding: 0 5px;
+    }
+    .submit-btn {
+      // border-style: none;
+      cursor: pointer;
+      margin-top: 20px;
+      font-weight: bold;
+      letter-spacing: .5px;
+      background-color: $primary-color;
+      color: white;
+      border-radius: 6px;
+      align-self: flex-end;
+      padding: 10px 20px;
+      &:hover{
+        background-color: $primary-alt;
+      }
+    }
+  }
+  .display-new-image {
+    width: 39%;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    img {
+      height: 250px;
+      width: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+  }
+}
