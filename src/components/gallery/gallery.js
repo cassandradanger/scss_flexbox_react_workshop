@@ -45,7 +45,8 @@ class Gallery extends Component {
   render() {
     return (
         <div className="gallery">
-          this is the gallery
+          <h2>this is the gallery</h2>
+          <p>this page is full of food</p>
           <ul>
             {this.state.recipes.map((recipeObject)=> {
               return <li key={recipeObject.name}>

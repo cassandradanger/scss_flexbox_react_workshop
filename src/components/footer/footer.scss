@@ -1,0 +1,9 @@
+@import '../variables.scss';
+
+.footer {
+  border: 1px solid green;
+  background-color: $brand-primary;
+  img {
+    height: 100px;
+  }
+}

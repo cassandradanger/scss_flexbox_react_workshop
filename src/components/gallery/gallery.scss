@@ -1,5 +1,13 @@
+@import '../variables.scss';
+
 .gallery {
-  border: 1px solid red;
+  text-align: center;
+  h2 {
+    color: $brand-primary;
+  }
+  p {
+    color: $brand-secondary;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -9,7 +17,6 @@
     max-width: 810px;
     margin: 0 auto;
     padding: 0;
-    border: 1px solid blue;
     li {
       margin: 10px;
       color: green;
@@ -22,5 +29,11 @@
         border-radius: 6px;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .gallery ul {
+    justify-content: space-evenly;
   }
 }
