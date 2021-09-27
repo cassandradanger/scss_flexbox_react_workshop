@@ -10,9 +10,10 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-        <div>
+        <div className="App">
           <Nav />
           <Form />
+          <hr className="line-break"/>
           <Gallery />
           <Footer />
         </div>
