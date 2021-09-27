@@ -3,7 +3,13 @@
 .footer {
   border: 1px solid green;
   background-color: $brand-primary;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
   img {
     height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }
