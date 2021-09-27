@@ -23,10 +23,7 @@
       font-weight: bold;
       align-self: flex-end;
       img {
-        height: 315px;
-        width: 250px;
-        object-fit: cover;
-        border-radius: 6px;
+        @include image-display(none);
       }
     }
   }

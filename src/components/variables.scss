@@ -1,2 +1,11 @@
 $brand-primary: #7f8d48;
 $brand-secondary: rgb(211, 83, 104);
+$brand-font: "helvetica";
+
+@mixin image-display($border-color) {
+  border: 5px solid $border-color;
+  height: 315px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+}

@@ -1,0 +1,21 @@
+@import '../variables.scss';
+
+.form {
+  border: 1px solid purple;
+  display: flex;
+  justify-content: space-evenly;
+  .input-form {
+    width: 40%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  }
+  .display-new-image {
+    width: 40%;
+    height: 390px;
+    border: 1px solid blue;
+    img {
+      @include image-display(green);
+    }
+  }
+}
