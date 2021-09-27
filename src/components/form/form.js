@@ -33,7 +33,7 @@ class Form extends Component {
   render() {
     return (
         <div className="form">
-          <>
+          <div>
             <label htmlFor="name">name:</label>
             <input type="text" id="name" onChange={(e) => {this.onChange(e, "name")}}/>
             <label htmlFor="imageUrl">image url:</label>
@@ -41,14 +41,14 @@ class Form extends Component {
             <label htmlFor="recipeUrl">recipe url:</label>
             <input type="text" id="recipeUrl" onChange={(e) => {this.onChange(e, "recipeUrl")}}/>
             <button onClick={this.onSubmit}>submittt</button>
-          </>
-          { JSON.stringify(this.state.displayObject) }
-          {/* <div className="display-new-image">
+          </div>
+          {/* { JSON.stringify(this.state.displayObject) } */}
+          <div className="display-new-image">
             <p>{this.state.displayObject.name}</p>
             <a href={this.state.displayObject.recipeUrl}>
               <img alt='most recent entry' src={this.state.displayObject.imageUrl}/>
             </a>
-          </div> */}
+          </div>
         </div>
   )}
 }

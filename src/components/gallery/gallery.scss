@@ -1,0 +1,14 @@
+.gallery {
+  border: 1px solid red;
+  ul {
+    list-style: none;
+    display: inline-block;
+    li {
+      color: green;
+      font-weight: bold;
+      img {
+        height: 200px;
+      }
+    }
+  }
+}
