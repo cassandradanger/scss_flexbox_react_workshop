@@ -2,12 +2,24 @@
   border: 1px solid red;
   ul {
     list-style: none;
-    display: inline-block;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: 810px;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid blue;
     li {
+      margin: 10px;
       color: green;
       font-weight: bold;
+      align-self: flex-end;
       img {
-        height: 200px;
+        height: 315px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 6px;
       }
     }
   }
